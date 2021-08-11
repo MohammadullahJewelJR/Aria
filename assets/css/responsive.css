@@ -1,0 +1,134 @@
+/* =============================== START MEDIA QUERY ======================== */
+@media screen and (max-width:992px ) {
+      .navigation nav {
+        width: 300px;
+        height: 100%;
+        background: #3ab7bd;
+        position: fixed;
+        padding: 65px;
+        text-align: left;
+        top: 0;
+        z-index: 99;
+        right:-100%;
+        margin-right: 0;
+        -webkit-transition:.8s;
+        transition:.8s;
+      }
+      .navigation nav ul li {
+        margin: 15px 0;
+        display: block;
+      }
+      .navigation nav ul li a:hover {
+        color: #2bd0b1;
+      }
+      .menu-btn{
+        display: inline-block;
+      }
+      .close-btn {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+      }
+      .question h3 {
+        font-size: 13px;
+      }
+      .answer p {
+        font-size: 14px;
+      }
+      #check3:checked ~ .navigation nav {
+        right: 0;
+      }
+      .service-content{
+        padding: 20px 0;
+      }
+      .filter-area img{
+        width:33%;
+      }
+      .tabs label {
+        font-size: 20px;
+      }
+      .question h3 span {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+      }
+      /* =========================== MEDIA QUERY FOR OFFER AREA =========== */
+      .left-content h3 {
+        font-size: 21px;
+      }
+}
+/* ================================== MEDIA QUERY FOR MEDIUM DEVICE =============== */
+@media screen and (max-width:768px ) {
+  .col-md-6{
+    flex-direction: column;
+  }
+  .column,.column2{flex-basis: 100%;}
+  .left-content, .right-content{padding:0;}
+  .col-md-4 {
+    flex-basis: 48%;
+  }
+  .testimonial-heading {
+    width: 100%;
+  }
+  .col-md-6 {
+    flex-basis: 100%;
+  }
+  .call-content {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .team-heading {
+    width: 100%;
+  }
+  .col-md-3 {
+    flex-basis: 48%;
+  }
+  .about-left {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .growth-content {
+    width: 100%;
+    margin: 20px 0 20px 20px;
+  }
+  .tabs {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .offer-box {
+    text-align: center;
+  }
+  .offer-box a {
+    margin: 10px auto;
+    text-align: center;
+  }
+  /* ---------------- query for footer  */
+  .ft-column {
+    flex-basis: 48%;
+    margin: 30px auto;
+  }
+}
+/* ================================ MEDIA QUERY FOR SMALL DEVICE  */
+@media screen and (max-width: 600px ) {
+  .col-md-4{
+    flex-basis: 100%;
+  }
+  .filter-area img {
+    width: 50%;
+  }
+  .ft-column {
+    flex-basis: 100%;
+    margin: 15px 0;
+  }
+}
+@media screen and (max-width: 480px ) {
+  .filter-area img {
+    width: 100%;
+  }
+  .col-md-3 {
+    flex-basis: 100%;
+  }
+  .tabs label {
+    font-size: 18px;
+  }
+}
